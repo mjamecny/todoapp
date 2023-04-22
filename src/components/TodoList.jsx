@@ -10,16 +10,16 @@ import TodoEmpty from './TodoEmpty'
 
 const TodoList = () => {
   const dispatch = useDispatch()
-  const todos = useSelector(selectFilteredTodos)
+  const filteredTodos = useSelector(selectFilteredTodos)
 
   return (
     <>
-      {todos.length !== 0 ? (
-        <Flex flexDirection="column" mt="2rem">
+      <TodoFilter />
+      {filteredTodos.length !== 0 ? (
+        <Flex flexDirection="column" mt="2rem" flex="1">
           <Button alignSelf="center" onClick={() => dispatch(deleteAll())}>
             Delete all
           </Button>
-          <TodoFilter />
           <UnorderedList listStyleType="none" mt="2rem">
             <Flex gap="1rem" flexDirection="column">
               <TodoItem />

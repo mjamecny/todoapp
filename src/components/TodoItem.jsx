@@ -39,6 +39,8 @@ const TodoItem = () => {
                 <Tooltip hasArrow label="Delete">
                   <IconButton
                     size="sm"
+                    bg="red.500"
+                    _hover={{ bg: 'red.600' }}
                     onClick={() => dispatch(deleteTodo(id))}
                     aria-label="Delete"
                     icon={<DeleteIcon />}
@@ -48,6 +50,8 @@ const TodoItem = () => {
                   <IconButton
                     isDisabled={isCompleted}
                     size="sm"
+                    bg="yellow.500"
+                    _hover={{ bg: 'yellow.600' }}
                     onClick={() => {
                       dispatch(editTodo(id))
                     }}
@@ -59,6 +63,8 @@ const TodoItem = () => {
                   <IconButton
                     isDisabled={isCompleted}
                     size="sm"
+                    bg="green.500"
+                    _hover={{ bg: 'green.600' }}
                     onClick={() => dispatch(checkTodo(id))}
                     aria-label="Check"
                     icon={<CheckIcon />}
@@ -89,7 +95,10 @@ const TodoItem = () => {
                   </form>
                 </FormControl>
               ) : (
-                <Text as={isCompleted ? 'del' : ''} fontSize="xl">
+                <Text
+                  as={isCompleted ? 'del' : ''}
+                  fontSize={{ base: 'sm', md: 'xl' }}
+                >
                   {task}
                 </Text>
               )}
