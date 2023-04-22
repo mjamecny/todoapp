@@ -8,7 +8,6 @@ import Footer from './components/Footer'
 const App = () => {
   return (
     <Flex
-      height="100vh"
       maxW="800px"
       margin="0 auto"
       mt="1rem"
