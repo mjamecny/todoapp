@@ -9,8 +9,8 @@ const App = () => {
   return (
     <Flex
       maxW="800px"
-      margin="0 auto"
-      mt="1rem"
+      marginX="auto"
+      mt={{ base: '1rem', lg: '5rem' }}
       flexDirection="column"
       paddingX="1rem"
     >

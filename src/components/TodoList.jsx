@@ -21,7 +21,12 @@ const TodoList = () => {
             Delete all
           </Button>
           <UnorderedList listStyleType="none" mt="2rem">
-            <Flex gap="1rem" flexDirection="column">
+            <Flex
+              gap="1rem"
+              flexDirection="column"
+              overflowY="scroll"
+              height="450px"
+            >
               <TodoItem />
             </Flex>
           </UnorderedList>
