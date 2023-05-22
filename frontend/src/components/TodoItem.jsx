@@ -99,9 +99,9 @@ const TodoItem = ({ todos }) => {
                     bg="yellow.500"
                     _hover={{ bg: 'yellow.600' }}
                     onClick={() => {
-                      setEditedTodo(...todos.filter((todo) => todo._id))
-                      setIsEditing(true)
                       setItemId(_id)
+                      setIsEditing(true)
+                      setEditedTodo(...todos.filter((todo) => todo._id === _id))
                     }}
                     aria-label="Edit"
                     icon={<EditIcon />}
