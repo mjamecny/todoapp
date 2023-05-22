@@ -1,14 +1,14 @@
 # TODO App
 
-Simple TODO app built with React and Chakra UI. TODOs are saved to localStorage.
+Simple TODO app built with MERN stack and Chakra UI.
 
 ## Features
 
+- Register account
 - Add TODO
 - Edit TODO
-- Filtering
+- Filtering by completed, uncompleted
 - Dark mode
-- TODOs saved to localStorage
 
 ## Screenshot
 
