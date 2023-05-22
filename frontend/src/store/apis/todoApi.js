@@ -6,7 +6,7 @@ const todoApi = createApi({
     baseUrl: `${
       import.meta.env.DEV
         ? 'http://localhost:5000'
-        : 'https://vodhub-api.onrender.com'
+        : 'https://todoapp-api-he73.onrender.com'
     }/api/todos`,
   }),
   tagTypes: ['TODO'],
