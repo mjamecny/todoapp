@@ -109,7 +109,7 @@ const TodoList = () => {
             <Flex
               gap="1rem"
               flexDirection="column"
-              overflowY="scroll"
+              overflowY={{ base: 'auto', md: 'scroll' }}
               height="400px"
             >
               <TodoItem todos={todos} />

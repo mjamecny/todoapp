@@ -74,8 +74,10 @@ const Header = () => {
   return (
     <>
       <Center gap="1rem">
-        <Icon as={FaCheckDouble} w={8} h={8} />
-        <Heading>TODO APP</Heading>
+        <Link to="/">
+          <Icon as={FaCheckDouble} w={8} h={8} />
+          <Heading>TODO APP</Heading>
+        </Link>
       </Center>
 
       <Center mt="2rem" gap="1rem">
