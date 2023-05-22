@@ -75,8 +75,10 @@ const Header = () => {
     <>
       <Center gap="1rem">
         <Link to="/">
-          <Icon as={FaCheckDouble} w={8} h={8} />
-          <Heading>TODO APP</Heading>
+          <Flex gap="1rem" justify="center" align="center">
+            <Icon as={FaCheckDouble} w={8} h={8} />
+            <Heading>TODO APP</Heading>
+          </Flex>
         </Link>
       </Center>
 

@@ -109,8 +109,8 @@ const TodoList = () => {
             <Flex
               gap="1rem"
               flexDirection="column"
-              overflowY={{ base: 'auto', md: 'scroll' }}
-              height="400px"
+              overflowY={{ base: 'auto' }}
+              height={{ base: '200px', md: '400px' }}
             >
               <TodoItem todos={todos} />
             </Flex>
