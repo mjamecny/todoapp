@@ -101,6 +101,7 @@ const TodoItem = ({ todos }) => {
                     onClick={() => {
                       setEditedTodo(...todos.filter((todo) => todo._id))
                       setIsEditing(true)
+                      setItemId(_id)
                     }}
                     aria-label="Edit"
                     icon={<EditIcon />}
@@ -120,7 +121,7 @@ const TodoItem = ({ todos }) => {
                   />
                 </Tooltip>
               </Flex>
-              {isEditing ? (
+              {isEditing && _id === itemId ? (
                 <FormControl>
                   <form onSubmit={handleSubmit}>
                     <Input

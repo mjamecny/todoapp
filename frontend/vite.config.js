@@ -11,8 +11,7 @@ export default defineConfig({
       manifest: {
         name: 'TODO app',
         short_name: 'TODO app',
-        description:
-          'App for searching,watching and saving VODs and clips from Twitch',
+        description: 'TODO app for daily tasks.',
         theme_color: '#000000',
         icons: [
           {
