@@ -1,0 +1,9 @@
+html,
+#root {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  max-width: 900px;
+  margin: 0 auto;
+  justify-content: center;
+}
