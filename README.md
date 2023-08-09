@@ -10,6 +10,6 @@ Simple TODO app built with MERN stack and Chakra UI.
 - Filtering by completed, uncompleted
 - Dark mode
 
-## Screenshot
+## Demo
 
-![frontpage](https://i.imgur.com/e3R877N.png)
+![todoapp_demo](https://i.imgur.com/sqssUj6.gif)
